@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Чек заказа</title>
+</head>
+<body>
+    <h1>Чек заказа</h1>
+    <p>Покупатель: {{ order.customer_name }}</p>
+    <p>Телефон: {{ order.phone }}</p>
+    <p>Товар: {{ order.product }}</p>
+    <p>Количество: {{ order.quantity }} шт.</p>
+    <p>Цена за штуку: {{ order.unit_price }} сум</p>
+    <p>Доставка: {{ order.delivery }}</p>
+    <p>Адрес: {{ order.address }}</p>
+    <h2>Итого: {{ order.total }} сум</h2>
+</body>
+</html>
